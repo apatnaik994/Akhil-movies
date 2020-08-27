@@ -21,6 +21,86 @@ akhilmovies</title>
 
 </pre>
 <marquee behavior="scroll" direction="left">Hello visitors..Welcome to Akhil movies Here you can Watch/ download all Ott premium contents for Free.. </marquee>
+<pre>
+</pre>
+<div style="background-color:#cfb0b0ad"><center>
+<h3>UPCOMING BLOCKBUSTERS..</h3></center></div>
+  <pre>
+  </pre>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 6</div>
+  <img src="avatar.jpg" style="width:100%">
+  <div class="text">Avatar 2</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 6</div>
+  <img src="v movie.jpg" style="width:100%">
+  <div class="text">Nanis V</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 6</div>
+  <img src="kgf2.jfif" style="width:100%">
+  <div class="text">Kgf2</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 6</div>
+  <img src="ww2.jfif" style="width:100%">
+  <div class="text">Wonder Womenw2</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5/ 6</div>
+  <img src="Tenet_movie.jpg" style="width:100%">
+  <div class="text">Tenet</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6/6 </div>
+  <img src="svp.jpg" style="width:100%">
+  <div class="text">Sarkaru Vaari Paata</div>
+</div>
+
+
+
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 
 
 
