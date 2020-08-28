@@ -134,5 +134,16 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+body, html {
+    height: 100%;
+}
+
+.heroImage {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url(" C:\Users\Akhil\Desktop\images\bg2.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
 
 
