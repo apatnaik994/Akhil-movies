@@ -145,5 +145,11 @@ body, html {
 	background-repeat: no-repeat;
 	position: relative;
 }
-
+.heroImage2 {
+	background: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.9)), url("KxaQCU.jpg");
+	height: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
 
