@@ -139,14 +139,14 @@ body, html {
 }
 
 .heroImage {
-	background: linear-gradient(rgba(0,0,0,0.05), rgba(0,0,0,0.9)), url(""),;
+	background: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.9)) ;
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
 }
 .heroImage2 {
-	background: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.9)), url("");
+	background: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.9)) ;
 	height: 50%;
 	background-position: center;
 	background-repeat: no-repeat;
