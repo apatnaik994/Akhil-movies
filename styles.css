@@ -144,7 +144,6 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	color:#cfb0b08c;
 }
 .heroImage2 {
 	background: linear-gradient(rgba(0,0,0,0.04), rgba(0,0,0,0.9)), url("");
@@ -152,7 +151,7 @@ body, html {
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
-	color:#cfb0b08c;
+	
 }
 canvas {
 	display: block;
