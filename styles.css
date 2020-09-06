@@ -195,6 +195,31 @@ canvas {
   }
 }
 
+.button {
+  border: none;
+  color: #cfb0b0ad;
+  padding: 11px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
 
 
 
