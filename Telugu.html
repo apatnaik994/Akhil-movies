@@ -1,12 +1,97 @@
-<!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
 
-  
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <style>
+
+
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e7d9b9;
+	display: ;
+	align-items:;
+	justify-content: ;
+	
+	margin: 2;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: ;
+	justify-content: ;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: a76bcf;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 20px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,29 +119,54 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-  
-  
+
+
+<link rel="icon" href="C:\Users\Akhil\Desktop\images\fevicon.png" type="C:\Users\Akhil\Desktop\images\image/png" sizes="16x16">
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ .snowcontainer{
+  position:relative;
+  width:100%;
+  overflow:visible;
+ }
+
+
 
 </style>
-
-<link rel="icon" href="fevicon.png" type="png" sizes="16x16">
-
-
-
 </head>
-<body background= "bg img.jpg"width="900px" hight="600px">
-<div class="header"><center>
-  <img src="logo.png" class="logo"width="350px"height="120px"></center>
-<div class="header-right">
-    <a class="active" href="index2.html">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </div>
+<body>
+
+
+<div class="header">
+
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+<p style= "font-size: 7">CLICK TO ACTIVATE DARK MODE</p>
 </div>
 
-  
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+
+
+
+
+<center>
+  <img src="C:\Users\Akhil\Desktop\images\logo.png" class="logo"width="350px"height="120px"></center>
+<div class="header-right">
+    <a class="active" href="https://apatnaik994.github.io/AKHIL-MOVIES/index2.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
 <script>
 //Get the button
@@ -78,112 +188,127 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
 </script>
+
+<pre>
+</pre>
 <div style=" background-color: gray">
-<div style ="color:orange"><h2>Cₗᵢcₖ ₒₙ ₜₕₑ ₘₒᵥᵢₑ ₚₒₛₜₑᵣ ₜₒ ₚₗₐy ₘₒᵥᵢₑ</h2></div></div>
+<div style ="color:orange"><h2>𝓒𝓵𝓲𝓬𝓴 𝓸𝓷 𝓽𝓱𝓮 𝓜𝓸𝓿𝓲𝓮 𝓹𝓸𝓼𝓽𝓮𝓻 𝓽𝓸 𝓹𝓵𝓪𝔂 𝓶𝓸𝓿𝓲𝓮</h2></div></div>
+
 
 <div class="row">
   <div class="column">
 <a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202020%20Movies/Gunjan%20Saxena%20-%20The%20Kargil%20Girl%20(2020)%20Telugu%20Original%20HDRip/Gunjan%20Saxena%20-%20The%20Kargil%20Girl%20Telugu%20Original%20HDRip%20Single%20Part/Gunjan%20Saxena%20-%20The%20Kargil%20Girl%20(2020)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
-<img src="Gunjan.jpg" alt="saaho movie" style="width:85%;height:60%";>
+<img src="Gunjan.jpg" alt="saaho movie" style="width:100%";;>
 </a>
 
   </div>
 <div class="column">
 <a href="https://www.y2mate.com/youtube/sqW95LOMrBU">
-<img src="NL.jpg" alt="Nenu Local movie" style="width:85%;height:60%";>
+<img src="NL.jpg" alt="Nenu Local movie" style="width:100%";>
 </a>
 
 
   </div>
  <div class="column">
 <a href="https://www.y2mate.com/youtube/kAw1q5ywIsY">
-<img src="raceg.jpg" alt="Race Gurram movie" style="width:85%;height:60%";>
+<img src="raceg.jpg" alt="Race Gurram movie" style="width:100%";>
 </a>
+</div>
 </div>
 <div class="row">
 <div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Saaho%20(2019)%20Telugu%20Proper%20HDRip/Saaho%20Telugu%20Proper%20HDRip%20Single%20Part/Saaho%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
-">
-<img src="saaho.jpg" alt="Race Gurram movie" style="width:85%;height:60%";>
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Saaho%20(2019)%20Telugu%20Proper%20HDRip/Saaho%20Telugu%20Proper%20HDRip%20Single%20Part/Saaho%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
+<img src="C:\Users\Akhil\Desktop\images\posters\saaho.jpg" alt="Race Gurram movie" style="width:100%";>
 </a>
 </div>
 <div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Khaidi%20(2019)%20Telugu%20Original%20HDRip/Khaidi%20Telugu%20Original%20HDRip%20Single%20Part/Khaidi%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
-<img src="khaiti.jpg" alt="khaidi" style="width:85%;height:60%";>
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Khaidi%20(2019)%20Telugu%20Original%20HDRip/Khaidi%20Telugu%20Original%20HDRip%20Single%20Part/Khaidi%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
+<img src="C:\Users\Akhil\Desktop\images\posters\khaiti.jpg" alt="Race Gurram movie" style="width:100%";>
 </a>
 </div>
 <div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Prati%20Roju%20Pandaage%20(2019)%20Telugu%20Proper%20HDRip/Prati%20Roju%20Pandaage%20Telugu%20Proper%20HDRip%20Single%20Part/Prati%20Roju%20Pandaage%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
-">
-<img src="pp.jpg" alt="Race Gurram movie" style="width:85%;height:60%";>
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Prati%20Roju%20Pandaage%20(2019)%20Telugu%20Proper%20HDRip/Prati%20Roju%20Pandaage%20Telugu%20Proper%20HDRip%20Single%20Part/Prati%20Roju%20Pandaage%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
+<img src="pp.jpg" alt="Race Gurram movie" style="width:100%";>
 </a></div>
 </div>
 <div class="row">
 <div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Mathu%20Vadalara%20(2019)%20Telugu%20Proper%20HDRip/Mathu%20Vadalara%20Telugu%20Proper%20HDRip%20Single%20Part/Mathu%20Vadalara%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="mv.jpg" alt="MV" style="width:85%;height:60%";>
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Mathu%20Vadalara%20(2019)%20Telugu%20Proper%20HDRip/Mathu%20Vadalara%20Telugu%20Proper%20HDRip%20Single%20Part/Mathu%20Vadalara%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
+">
+<img src="mv.jpg" alt="MV" style="width:100%";>
 </a>
 </div>
 <div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip/Arjun%20Suravaram%20Telugu%20Proper%20HDRip%20Single%20Part/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
-">
-<img src="as.jpg" alt="AS" style="width:85%;height:60%";>
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip/Arjun%20Suravaram%20Telugu%20Proper%20HDRip%20Single%20Part/Arjun%20Suravaram%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
+<img src="as.jpg" alt="AS" style="width:100%";>
 </a>
 </div>
 <div class="column">
 <a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/90ML%20(2019)%20Telugu%20Proper%20HDRip/90ML%20Telugu%20Proper%20HDRip%20Single%20Part/90ML%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="90-ml.jpg" alt="90ML" style="width:85%;height:60%";>
-</a></div>
-</div>
-  
-  <div class="row">
-<div class="column">
-<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Ruler%20(2019)%20Telugu%20Proper%20HDRip/Ruler%20Telugu%20Proper%20HDRip%20Single%20Part/Ruler%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="Ruler.jpg" alt="Rular" style="width:85%;height:60%";>
-</a>
-</div>
-<div class="column">
-<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Whistle%20(2019)%20Telugu%20Original%20HDRip/Whistle%20Telugu%20Original%20HDRip%20Single%20Part/Whistle%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
-<img src="wistle.jpg" alt="wistle" style="width:85%;height:60%";>
-</a>
-</div>
-<div class="column">
-<a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/NGK%20(2019)%20Telugu%20Original%20HDRip/NGK%20Telugu%20Original%20HDRip%20Single%20Part/NGK%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
-<img src="ngk.jpg" alt="NGK" style="width:85%;height:60%";>
+<img src="90-ml.jpg" alt="90ML" style="width:100%";>
 </a></div>
 </div>
 
 <div class="row">
 <div class="column">
+<a href="https://supervideo.tv/paubtiqrp2wa">
+<img src="Ruler.jpg" alt="Rular" style="width:100%";>
+</a>
+</div>
+<div class="column">
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/Whistle%20(2019)%20Telugu%20Original%20HDRip/Whistle%20Telugu%20Original%20HDRip%20Single%20Part/Whistle%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
+<img src="wistle.jpg" alt="wistle" style="width:100%";>
+</a>
+</div>
+<div class="column">
+<a href="http://www.jiorockerss.pw/files/Telugu%20Movies/Telugu%202019%20Movies/NGK%20(2019)%20Telugu%20Original%20HDRip/NGK%20Telugu%20Original%20HDRip%20Single%20Part/NGK%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
+<img src="ngk.jpg" alt="NGK" style="width:100%";>
+</a></div>
+</div>
+
+
+
+<div class="row">
+<div class="column">
 <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Tenali%20Ramakrishna%20BA%20BL%20(2019)%20Telugu%20Proper%20HDRip/Tenali%20Ramakrishna%20BA%20BL%20Telugu%20Proper%20HDRip%20Single%20Part/Tenali%20Ramakrishna%20BA%20BL%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="tenali.jpg" alt="Tenali " style="width:85%;height:60%";>
+<img src="tenali.jpg" alt="Tenali " style="width:100%";>
 </a>
 </div>
   <div class="column">
 <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202020%20Movies/V%20(2020)%20Telugu%20Original%20HDRip/V%20Telugu%20Original%20HDRip%20Single%20Part/V%20(2020)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
-<img src="v.webp" alt="v " style="width:85%;height:60%";>
+<img src="v.webp" alt="v "style="width:100%";>
 </a>
 </div>
   <div class="column">
 <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Avengers%20Endgame%20(2019)%20Telugu%20HDRip%20(Original%20Audio)/Avengers%20Endgame%20(2019)%20Telugu%20HDRip%20Single%20Part%20(Original%20Audio).mp4">
-<img src="end game.jpg" alt="avengers end game" style="width:85%;height:60%";>
+<img src="end game.jpg" alt="avengers end game" style="width:100%";>
 </a>
 </div>
 </div>
   <div class="row">
 <div class="column">
   <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202018%20Dubbed%20Movies/Avengers%20-%20Infinity%20War%20(2018)%20Telugu%20Original%20HD/Avengers%20-%20Infinity%20War%20(2018)%20Telugu%20Dubbed%20Original%20HDRip%20Single%20Part.mp4">
-<img src="infinity war.jpg" alt="avengers infinity " style="width:85%;height:60%";>
+<img src="infinity war.jpg" alt="avengers infinity " style="width:100%";>
 </a>
 </div>
   <div class="column">
 <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/George%20Reddy%20(2019)%20Telugu%20Proper%20HDRip/George%20Reddy%20Telugu%20Proper%20HDRip%20Single%20Part/George%20Reddy%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="george reddy.jpg" alt="george reddy" style="width:85%;height:60%";></a>
+<img src="george reddy.jpg" alt="george reddy" style="width:100%";></a>
 </div>
     <div class="column">
 <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Venky%20Mama%20(2019)%20Telugu%20Proper%20HDRip/Venky%20Mama%20Telugu%20Proper%20HDRip%20Single%20Part/Venky%20Mama%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4">
-<img src="venky mama.jpg" alt="venkymama " style="width:85%;height:60%";>
+<img src="venky mama.jpg" alt="venkymama " style="width:100%";>
 </a>
 </div>
   
@@ -191,76 +316,64 @@ function topFunction() {
   <div class="row">
 <div class="column">
   <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%20(2018)%20Movies/Aravinda%20Sametha%20Veera%20Raghava%20(2018)%20Telugu%20HDRip/Aravinda%20Sametha%20Veera%20Raghava%20Telugu%20HDRip%20Single%20Part%20(High%20Quality)/Aravinda%20Sametha%20Veera%20Raghava%20(2018)%20Telugu%20HDRip%20Single%20Part.mp4">
-    <img src="aravinda sameta.jpg" alt="Aravinda sameta" style="width:85%;height:60%";></a>
+    <img src="aravinda sameta.jpg" alt="Aravinda sameta" style="width:100%";></a>
   </div>
     <div class="column">
   <a href="https://www.mxplayer.in/movie/watch-inttelligent-movie-online-e1c91de72b598ad28bce47d7af103a8e?watch=true
 ">
-    <img src="intelligent.jpg" alt="intelligent" style="width:85%;height:60%";></a>
+    <img src="intelligent.jpg" alt="intelligent" style="width:100%";></a>
   </div>
     <div class="column">
   <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%20(2018)%20Movies/Sammohanam%20(2018)%20Telugu%20HDTvRip/Sammohanam%20Telugu%20HDTvRip%20Single%20Part/Sammohanam%20(2018)%20Telugu%20HDTvRip%20Single%20Part.mp4
 ">
-    <img src="sammohanam.jpg" alt="sammohanam" style="width:85%;height:60%";></a>
+    <img src="sammohanam.jpg" alt="sammohanam" style="width:100%";></a>
   </div>
     </div>
+  <div class="row">
+<div class="column">
+    
+  <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/The%20Lion%20King%20(2019)%20Telugu%20Original%20HD/The%20Lion%20King%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
+ <img src="lion king.jpg" alt="lionking" style="width:100%";></a>
+  </div>   
+       <div class="column">   
+  <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Alita%20Battle%20Angel%20(2019)%20Telugu%20HDRip%20(Original%20Audio)/Alita%20Battle%20Angel%20(2019)%20Telugu%20HDRip%20Single%20Part%20(Original%20Audio).mp4">
+ <img src="alita.jpg" alt="alita" style="width:100%";></a>
+  </div>
+          <div class="column">
+    <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Captain%20Marvel%20(2019)%20Telugu%20Original%20HDRip/Captain%20Marvel%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4">
+ <img src="captainmarvel.jpg" alt="alita" style="width:100%";></a>
+  </div>    
+  </div>
+
+
+
    <div class="row">
 <div class="column">
   <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%20(2018)%20Movies/Geetha%20Govindam%20(2018)%20Telugu%20Proper%20HDRip/Geetha%20Govindam%20Telugu%20Proper%20HDRip%20Single%20Part/Geetha%20Govindam%20(2018)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
 ">
- <img src="geeta givindam.jpg" alt="geeta govindam" style="width:85%;height:60%";></a>
+ <img src="geeta givindam.jpg" alt="geeta govindam" style="width:100%";></a>
   </div>
   <div class="column">
   <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202019%20Movies/Guna%20369%20(2019)%20Telugu%20Proper%20HDRip/Guna%20369%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part/Guna%20369%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part.mp4
 
 ">
- <img src="guna.jpg" alt="guna" style="width:85%;height:60%";></a>
+ <img src="guna.jpg" alt="guna" style="width:100%";></a>
   </div>
      <div class="column">
   <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Parasite%20(2019)%20Telugu%20(Fan%20Dub)%20HDRip/Parasite%20(2019)%20Telugu%20(Fan%20Dubbed)%20HDRip%20Single%20Part.mp4
 
 ">
- <img src="parasite.jpg" alt="parasite" style="width:85%;height:60%";></a>
+ <img src="parasite.jpg" alt="parasite" style="width:100%";></a>
   </div>
   </div>
-     <div class="row">
-<div class="column">
-    
-  <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/The%20Lion%20King%20(2019)%20Telugu%20Original%20HD/The%20Lion%20King%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4
 
-
-">
- <img src="lion king.jpg" alt="lionking" style="width:85%;height:60%";></a>
-  </div>
-       
-       <div class="column">
-    
-  <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Alita%20Battle%20Angel%20(2019)%20Telugu%20HDRip%20(Original%20Audio)/Alita%20Battle%20Angel%20(2019)%20Telugu%20HDRip%20Single%20Part%20(Original%20Audio).mp4
-
-
-
-">
- <img src="alita.jpg" alt="alita" style="width:85%;height:60%";></a>
-  </div>
-          <div class="column">
-    
-  <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Captain%20Marvel%20(2019)%20Telugu%20Original%20HDRip/Captain%20Marvel%20(2019)%20Telugu%20Original%20HDRip%20Single%20Part.mp4
-
-
-
-
-">
- <img src="captainmarvel.jpg" alt="alita" style="width:85%;height:60%";></a>
-  </div>
-      
-  </div>
-       <div class="row">
+   <div class="row">
 <div class="column">
     
   <a href="http://www.naadubmovies.com/files/Telugu%20Dubbed%20Movies/Telugu%202019%20Dubbed%20Movies/Dumbo%20(2019)%20Telugu%20Proper%20HDRip%20(Original%20Audio)/Dumbo%20(2019)%20Telugu%20Proper%20HDRip%20Single%20Part%20(Original%20Audio).mp4
 
 ">
- <img src="dumbo.jpg" alt="dumbo" style="width:85%;height:60%";></a>
+ <img src="dumbo.jpg" alt="dumbo"  style="width:100%";></a>
   </div>
         <div class="column">
     
@@ -270,7 +383,7 @@ function topFunction() {
 
 
 ">
- <img src="it chapter2.jpg" alt="dumbo" style="width:85%;height:60%";></a>
+ <img src="it chapter2.jpg" alt="dumbo"  style="width:100%";></a>
   </div>
 
              <div class="column">
@@ -278,34 +391,33 @@ function topFunction() {
   <a href="http://www.jiorockers.ws/files/Telugu%20Movies/Telugu%202020%20Movies/Nishabdham%20(2020)%20Telugu%20Original%20HDRip/Nishabdham%20Telugu%20Original%20HDRip%20Single%20Part/Nishabdham%20(2020)%20Telugu%20Original%20HDRip%20Single%20Part.mp4
 
 ">
- <img src="nishabdam.jpg" alt="coming soon" style="width:85%;height:60%";></a>
-  </div>
-         
-          
-         
-         
-  </div>
-  
-   <div class="row">
-<div class="column">
-  <a href="http://www.kothamovies.net/files/Telugu%20Movies/Telugu%202020%20Movies/Orey%20Bujjiga%20(2020)%20Original%20HDRip/Orey%20Bujjiga%20Telugu%20Original%20HDRip%20Single%20Part.mp4
+ <img src="nishabdam.jpg" alt="coming soon"  style="width:100%";></a>
+  </div>   
+  </div>   
 
-">
-    <img src="oray bujjiga.jpg" alt="coming soon" style="width:85%;height:60%";></a>
-  </div>
-         
- </div> 
+
   
   
-  
-  
-  
-  
-  
-<footer><center>
+
+
+
+
+
+
+
+
+
+
+<footer>
   <p><b>Site by: Akhil kumar patnaik.V</b><br>
-  2020 Google All Rights reserved</p></center>
+  2020 Google All Rights reserved</p>
 </footer>
 </body>
-</html>
 
+
+
+
+
+
+
+</html>
