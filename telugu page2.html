@@ -1,0 +1,242 @@
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="C:\Users\Akhil\Desktop\movie site\styles.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+
+
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e7d9b9;
+	display: ;
+	align-items: ;
+	justify-content: ;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: ;
+	justify-content: ;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: a76bcf;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 20px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+<link rel="icon" href="C:\Users\Akhil\Desktop\images\fevicon.png" type="C:\Users\Akhil\Desktop\images\image/png" sizes="16x16">
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+ .snowcontainer{
+  position:relative;
+  width:100%;
+  overflow:visible;
+ }
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="header">
+
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+<p style= "font-size: 7">CLICK TO ACTIVATE DARK MODE</p>
+</div>
+
+
+
+
+
+
+<center>
+  <img src="C:\Users\Akhil\Desktop\images\logo.png" class="logo"width="350px"height="120px"></center>
+<div class="header-right">
+    <a class="active" href="#home">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">About</a>
+</div>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
+</script>
+
+<pre>
+</pre>
+
+<div style=" background-color: gray">
+<div style ="color:orange"><h2>Cₗᵢcₖ ₒₙ ₜₕₑ ₘₒᵥᵢₑ ₚₒₛₜₑᵣ ₜₒ ₚₗₐy ₘₒᵥᵢₑ</h2></div></div>
+   <div class="row">
+<div class="column">
+  <a href="http://www.kothamovies.net/files/Telugu%20Movies/Telugu%202020%20Movies/Orey%20Bujjiga%20(2020)%20Original%20HDRip/Orey%20Bujjiga%20Telugu%20Original%20HDRip%20Single%20Part.mp4
+
+">
+    <img src="C:\Users\Akhil\Desktop\images\posters\oray bujjiga.jpg" alt="oraybujjiga" style="width:85%";></a>
+  </div>
+       
+<div class="column">
+  <a href="http://www.kothamovies.net/files/Telugu%20Movies/Telugu%202020%20Movies/Orey%20Bujjiga%20(2020)%20Original%20HDRip/Orey%20Bujjiga%20Telugu%20Original%20HDRip%20Single%20Part.mp4
+
+">
+    <img src="C:\Users\Akhil\Desktop\images\posters\rajavaru ranigaru.jpg" alt="oraybujjiga" style="width:85%";></a>
+  </div>
+         
+
+ 
+ </div> 
+
+
+
+
+
+
+
+
+<footer>
+  <p><b>Site by: Akhil kumar patnaik.V</b><br>
+  2020 Google All Rights reserved</p>
+</footer>
+
+
+
+
+</body>
+</html>
