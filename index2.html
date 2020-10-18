@@ -23,7 +23,22 @@ akhilmovies</title>
  </div>
 
 	
-<div class="header"><center>
+<div class="header">
+	
+	
+<div>
+	<input type="checkbox" class="checkbox" id="chk" />
+	<label class="label" for="chk">
+		<i class="fas fa-moon"></i>
+		<i class="fas fa-sun"></i>
+		<div class="ball"></div>
+	</label>
+<p style= "font-size: 7">CLICK TO ACTIVATE DARK MODE</p>
+</div>
+	
+	
+	
+	<center>
   <img src="logo.png" class="logo"width="350px"height="120px"></center>
 <div class="header-right">
     <a class="active" href="index2.html">Home</a>
@@ -162,6 +177,19 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+	    
+	    
+	    
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});	    
+	    
+	    
+	    
+	    
+	    
 </script>
 
 
