@@ -1,39 +1,597 @@
 
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-<title>
-akhilmovies</title>
-	
-<link rel="stylesheet" href="styles.css">
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+<style>
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+.header {
+  overflow: hidden;
+  background-color: #cfb0b0ad;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #e7d9b9;
+	display: ;
+	align-items: ;
+	justify-content: ;
+	height: 100vh;
+	margin: 0;
+	transition: background 0.2s linear;
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: ;
+	justify-content: ;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 40px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: a76bcf;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 20px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+}
+
+
+
+
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+
+        *{
+  margin:0;
+  padding:0;
+}
+body {
+	font-family: Helvetica, Arial, sans-serif;
+  font-size:16px;
+}
+.mobile-menu {
+  display:block;
+  width:100%;
+background: #8aa8bd/*e0b88f/*c99393/*e5d1a4/*dcc591/*EFD3A3*/;
+line-height: 1.6em;
+font-weight: 400;
+width:100%;
+text-align:center;
+	position: relative;
+  margin:0 auto;
+}
+/*Strip the ul of padding and list styling*/
+.mobile-menu ul {
+	list-style-type:none;
+  margin: 0 auto;
+  padding-left:0;
+  text-align:center;
+  width:100%;
+  position: absolute;
+  background: #8aa8bd;
+}
+
+/*Create a horizontal list with spacing*/
+.mobile-menu li {
+	display:inline-block;
+	/*float: left;
+	margin-right: 1px;*/
+}
+
+/*Style for menu links*/
+.mobile-menu li a {
+	display:block;
+	min-width:140px;
+	text-align: center;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+  text-transform:uppercase;
+	background: #8aa8bd;
+	text-decoration: none;
+  margin-left:-5px;
+  padding: 10px 0;  
+-webkit-transition: all 0.4s ease 0s;
+-moz-transition: all 0.4s ease 0s;
+-ms-transition: all 0.4s ease 0s;
+-o-transition: all 0.4s ease 0s;
+transition: all 0.4s ease 0s;
+}
+
+/*Hover state for top level links*/
+.mobile-menu li:hover a {
+	color: #4db3ff;
+  background-color:#ccddee;
+}
+
+/*Style for dropdown links*/
+.mobile-menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.mobile-menu li:hover .mobile-menu ul a:hover {
+	color: #4db3ff;
+}
+
+/*Hide dropdown links until they are needed*/
+.mobile-menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.mobile-menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.mobile-menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+
+/*Style 'show menu' label button and hide it by default*/
+.mobile-menu .show-menu {
+	text-decoration: none;
+	color: #fff;
+	background: #8aa8bd;
+	text-align: center;
+	padding: 10px 15px;
+	display: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.mobile-menu .show-menu span{
+   padding-left: 25px;
+}
+
+/*Hide checkbox*/
+.mobile-menu input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.mobile-menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 800px){
+  .mobile-menu .lines {
+    border-bottom: 15px double #f8f8f8; 
+    border-top: 5px solid #f8f8f8; 
+    content:"";
+    height: 5px; 
+    width:20px;
+    padding-right:15px;
+  float: right;
+}
+	/*Make dropdown links appear inline*/
+	.mobile-menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.mobile-menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.mobile-menu ul li, .mobile-menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.mobile-menu .show-menu {
+		display:block;
+	}
+}
+        
+
+
+
+.twitter {
+  font: normal normal 10px Arial;
+  text-align: center;
+  color: #998578;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.twitter {
+  color: #000000;
+  text-decoration: none;
+  display: block;
+  padding: 14px;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.twitter:hover {
+  color: #FF7D6D;
+  text-decoration: none;
+}
+
+span {
+  font-style: italic;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+/* Floating Social Media Bar Style Starts Here */
+
+.fl-fl {
+  background: #000000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 4px;
+  width: 190px;
+  position: fixed;
+  right: -160px;
+  z-index: 1000;
+  font: normal normal 10px Arial;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.fa {
+  font-size: 20px;
+  color: #fff;
+  padding: 10px 0;
+  width: 40px;
+  margin-left: 8px;
+}
+
+.fl-fl:hover {
+  right: 0;
+}
+
+.fl-fl a {
+  color: #fff !important;
+  text-decoration: none;
+  text-align: center;
+  line-height: 43px!important;
+  vertical-align: top!important;
+}
+
+.float-fb {
+  top: 320px;
+}
+
+.float-tw {
+  top: 380px;
+}
+
+.float-gp {
+  top: 440px;
+}
+
+
+/* Floating Social Media Bar Style Ends Here */
+
+
+
+.container2 {
+  position: relative;
+  text-align: center;
+  color: #F7CAC9;
+   opacity: 0.7;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.button {
+  border: none;
+  color: #cfb0b0ad;
+  padding: 11px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
 
 <link rel="icon" href="fevicon.png" type="image/png" sizes="16x16">
 	
-
-	
-	
-	
-	
-	
-	
-</head>
-<body background= "bg img.jpg"width="900px" hight="600px">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/h5ab-snow-flurry.js"></script>
 
-	<div style= "background-color:gray;height:55px";>
-		<a href="#" class="fa fa-facebook"></a>
-<a href="#" class="fa fa-twitter"></a>
-<a href="#" class="fa fa-google"></a>	
-		
-		
+
+
+</head>
+<body background= "bg img.jpg"width="900px" hight="600px">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<div style= "background-color:#cf6a6a61;height:45px";>
+<marquee>
+<p style="font-family:courier;">  WELCOME TO AKHILMOVIES ... HERE YOU CAN FIND ALL OTT PREMIUM CONTENTS FOR FREE </p></marquee>
  </div>
 
-	
+
+
+
 <div class="header">
-	
-	
+
 <div>
 	<input type="checkbox" class="checkbox" id="chk" />
 	<label class="label" for="chk">
@@ -43,24 +601,38 @@ akhilmovies</title>
 	</label>
 <p style= "font-size: 7">CLICK TO ACTIVATE DARK MODE</p>
 </div>
-	
-	
-	
-	<center>
-  <img src="logo.png" class="logo"width="350px"height="120px"></center>
-<div class="header-right">
-    <a class="active" href="index2.html">Home</a>
-    <a href="contact.html">Contact</a>
-    <a href="about.html">About</a>
-  </div>
+
+
+
+
+
+
+<center>
+  <img src="C:\Users\Akhil\Desktop\images\logo.png" class="logo"width="350px"height="120px"></center>
 
 </div>
 
+<nav class="mobile-menu">
+<label for="show-menu" class="show-menu"><span>Menu</span><div class="lines"></div></label>
+	<input type="checkbox" id="show-menu">
+		<ul id="menu">
+		<li><a href="index2.html">Home</a></li>
+		<li>			<a href="about.html">About</a></li>
+	
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</nav>
+
 <pre>
 
+
 </pre>
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-	
+
+
+
+
+
+
 <script>
 //Get the button
 var mybutton = document.getElementById("myBtn");
@@ -81,11 +653,24 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+
+const chk = document.getElementById('chk');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
+
 </script>
 
 
-	
-	<div style= "background-color:gray;height:85px;width:320px";>
+<pre>
+
+</pre>
+
+
 
 
     <script>  
@@ -107,121 +692,177 @@ function topFunction() {
     } else {  
       welcome = "Good evening visitors...";  
     }  
-    document.write("<h2>" + "<font color='#85144b'>" + welcome + "</font>" + " welcome to AKHIL MOVIES");  
+    document.write("<h2>" + "<font color='#85144b'>" + welcome + "</font>" + " ");  
     document.write("<br>" + hour + ":" + minute + ":" + second);  
     </script>  
  </div>
 
 
+
+
+
+
+
+
+
+<!-- Floating Social Media bar Starts -->
+<div class="float-sm">
+  <div class="fl-fl float-fb">
+    <i class="fa fa-facebook"></i>
+    <a href="" target="_blank"> Follow on FB!</a>
+  </div>
+  <div class="fl-fl float-tw">
+    <i class="fa fa-twitter"></i>
+    <a href="" target="_blank">Follow on Twitter!</a>
+  </div>
+  <div class="fl-fl float-gp">
+    <i class="fa fa-google-plus"></i>
+    <a href="" target="_blank">review us on Gmail!</a>
+  </div>
+  
+</div>
+<!-- Floating Social Media bar Ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <pre>
 
 </pre>
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-<marquee behavior="scroll" direction="left">Hello visitors..Welcome to Akhil movies Here you can Watch/ download all Ott premium contents for Free.. </marquee>
+
+<div style= "background-color:#99c0adad;height:45px";>
+<center>
+<h3 style="font-family:courier;" ><I>UPCOMING BLOCKBUSTERS..</I></h3></center>
+
+</div>
 <pre>
+
 </pre>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 9</div><center>
+    <img src="kgf2.jpg" style="width:90%">
+ </center> </div>
 
-<div style="background-color:#cfb0b0ad"><center>
-<h3 class="glow">UPCOMING BLOCKBUSTERS..</h3></center></div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 9</div><center>
+    <img src="avataar2.jpg" style="width:90%">
+ </center> </div>
 
-	
-<div class="slideshow-container">
+  <div class="mySlides">
+    <div class="numbertext">3 / 9</div><center>
+    <img src="BW.jpg" style="width:90%">
+ </center> </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 9</div><center>
+    <img src="lakshmibomb.jpg" style="width:90%">
+  </center></div>
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 7</div>
-    <img src="BW.jpg" style="width:100%;height:50%";>
-    <div class="text">Black widow</div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 9</div><center>
+    <img src="LS.jpg" style="width:90%">
+  </center></div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 9</div><center>
+    <img src="RS.jpg" style="width:90%">
+ </center> </div>
+    <div class="mySlides">
+    <div class="numbertext">7/ 9</div><center>
+    <img src="SVP.jpg" style="width:90%">
+ </center> </div>
+     <div class="mySlides">
+    <div class="numbertext">8/ 9</div><center>
+    <img src="VS.jpg" style="width:90%">
+ </center> </div>
+        <div class="mySlides">
+    <div class="numbertext">9 / 9</div><center>
+    <img src="ww.jpg" style="width:90%">
+ </center> </div>
+    
+
+
+
+
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
   </div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 7</div>
-    <img src="ww.jpg" style="width:100%;height:50%";>
-    <div class="text">wonder women</div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="kgf2.jpg" style="width:100%" onclick="currentSlide(1)" alt="KGF2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="avataar2.jpg" style="width:100%" onclick="currentSlide(2)" alt="AVATAR 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="BW.jpg" style="width:100%" onclick="currentSlide(3)" alt="BLACK WIDOW">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="lakshmibomb.jpg" style="width:100%" onclick="currentSlide(4)" alt="LAKSHMI">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="LS.jpg" style="width:100%" onclick="currentSlide(5)" alt="LOVE STORY">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="RS.jpg" style="width:100%" onclick="currentSlide(6)" alt="RADHE SHYAM">
+    </div>
   </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 7</div>
-    <img src="VS.jpg" style="width:100%;height:50%";>
-    <div class="text">Vakeel saab</div>
-  </div>
- <div class="mySlides fade">
-    <div class="numbertext">4 / 7</div>
-    <img src="avataar2.jpg" style="width:100%;height:50%";>
-    <div class="text">avatar2</div>
-  </div>
-<div class="mySlides fade">
-    <div class="numbertext">5 / 7</div>
-    <img src="svp.jpg" style="width:100%;height:50%";>
-    <div class="text">sarkaru vari pata</div>
-  </div>
-	
-	<div class="mySlides fade">
-    <div class="numbertext">6/ 7</div>
-    <img src="lakshmibomb.jpg" style="width:100%;height:50%";>
-    <div class="text">lakshmibomb</div>
-  </div>
-	
-	
-	<div class="mySlides fade">
-    <div class="numbertext">7 / 7</div>
-    <img src="slsb.jpg" style="width:100%;height:50%";>
-    <div class="text">solo life ee sooo betteru</div>
-  </div>
-
-	
-	
-
-
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-<span class="dot" onclick="currentSlide(4)"></span>
-<span class="dot" onclick="currentSlide(5)"></span>
-	<span class="dot" onclick="currentSlide(6)"></span>
-	<span class="dot" onclick="currentSlide(7)"></span>
+ <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="svp.jpg" style="width:100%" onclick="currentSlide(7)" alt="SARKARU VAARI PAATA">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="VS.jpg" style="width:100%" onclick="currentSlide(8)" alt="VAKEEL SAAB">
+    </div>
+<div class="column">
+      <img class="demo cursor" src="ww.jpg" style="width:100%" onclick="currentSlide(9)" alt="WONDER WOMEN">
+    </div>
+  </div>
 </div>
-    <script>
+
+
+
+
+
+
+
+
+
+<pre>
+
+</pre>
+<script>
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -229,7 +870,8 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
@@ -240,83 +882,67 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
-	    
-	    
-	    
-const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});	    
-	    
-	    
-	    
-	    
-	    
 </script>
+    
 
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-  <pre>
+<hr/>
+
+<pre>
 
 </pre>
-	
-	<div class="container">
-  <img src="https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg" alt="Snow" style="width:80%;height:50%">
+
+<div class="container2">
+  <img src="https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg" alt="Snow" style="width:80%;height:45%">
 <div class="centered">
 
-
-		<center><h1 style="color:#d1a544f2">тєℓυgυ мσνιєѕ</h1></center>
+		<center><h2 ><div style= "background-color:#89848991;height:45px";>Telugu Movies</div></h2></center>
 <pre>
 
 </pre>
-		<center><a href="Telugu.html"><button class="button button1">Watch Here</button></a></center>
-	</div>
+		<center><a href="telugu.html"><button class="button button1">click Here</button></a></center>
+
+
+
 </div>
-	<br>
+</div>
+<br>
 <pre>
+
 </pre>
-	
-<div class="container">
-  <img src="https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg" alt="Snow" style="width:80%;height:50%">
+<div class="container2">
+  <img src="https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg" alt="Snow" style="width:80%; height:45%">
 <div class="centered">
-
-
-		<center><h1 style="color:#d1a544f2">нσℓℓуωσσ∂ мσνιєѕ</h1></center>
+<center><h2 ><div style= "background-color:#89848991;height:45px";>hollywood Movies</div></h2></center>
 <pre>
 
 </pre>
-		<center><a href="Hollywood.html"><button class="button button1">Watch Here</button></a></center>
-	</div>
+<center><a href="hollywood.html"><button class="button button1">click Here</button></a></center>
+</div>
 </div>
 
-
+<br>
 <pre>
 </pre>
+
+
+
+
+
+
 
 
 
 
 <footer>
-  <p><b>Site by: Akhil kumar patnaik.V</b><br>
-  2020 Google All Rights reserved</p>
+  <p style="font-family:courier;">Site by: Akhil kumar</p>
 </footer>
-	<style>
+
+
+
+<style>
   #snowflakeContainer {
     position: absolute;
     left: 0px;
@@ -512,5 +1138,15 @@ chk.addEventListener('change', () => {
     resetPosition = true;
   }
 </script>
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
