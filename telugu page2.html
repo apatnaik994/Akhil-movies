@@ -526,6 +526,17 @@ height:30px;
 
 
 
+.progress-container {
+  width: 100%;
+  height: 5px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #4caf50;
+  width: 0%;
+}
 
 
 
@@ -547,6 +558,14 @@ height:30px;
 <div style= "background-color:#aaf2f154;height:40px";>
 <marquee behavior="alternate">
 <p style="font-family:courier;"> 𝒲𝑒𝓁𝒸𝑜𝓂𝑒 𝓉𝑜<b> Hollywood movies </b></p></marquee>
+		<div class="header2">
+
+
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
+  </div>  
+</div>
+	
  </div>
 
 
@@ -1148,6 +1167,24 @@ chk.addEventListener('change', () => {
 
 </pre>
 
+	
+	
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+
+	
+	
+	
 <div class="footer">
   <p>SITE BY AKHIL</p>
 </div>
